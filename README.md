@@ -18,12 +18,15 @@ class into the website. Also we will create an api and a restful api using Flask
           our variables to the class so that it can be callable                                                                         
                                                                                                                                         ### A sample of the command interpreter ###                                                                                          
 ===============================================                                            
+
 	import cmd                                                                                                                              
                                                                                                                                         
+	
 	class HelloWorld(cmd.Cmd):                                                                                                              
         	"""This will greet my friends"""                                                                                                
         	FRIENDS = ['Ayo', 'Femi', 'Miracle', 'Afeez']                                                                                  
-                                                                                                                                                	def to_greet(self, person):                                                                                                     
+               
+		def to_greet(self, person):                                                                                                     
                 	if person and person in self.FRIENDS:                                                                                   
                         	print ('Hi %s!' & person)                                                                                       
                 	elif person:                                                                                                            
@@ -32,5 +35,5 @@ class into the website. Also we will create an api and a restful api using Flask
                         	print('Hello')                                                                                                  
 
                                                                                                                                         
-if __name__ == '__main__':                                                                                                              
-        HelloWorld().cmdloop()
+	if __name__ == '__main__':                                                                                                              
+        	HelloWorld().cmdloop()
